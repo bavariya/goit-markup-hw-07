@@ -1,0 +1,84 @@
+.footer-block {
+    background-color: var(--background-hero-footer-col);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    color: var(--white-color);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: var(--footer-text-color);
+}
+
+.footer-contacts .adres {
+    color: var(--white-color);
+}
+
+.footer-contacts a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+}
+
+.footer-hover {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-hover:hover,
+.footer-hover:focus {
+    color: var(--color-hover);
+}
+
+.footer-contacts li:nth-child(-n + 2) {
+    margin-bottom: 9px;
+}
+
+.footer-title {
+    color: var(--white-color);
+    font-size: 14px;
+    line-height: 1.42em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-flex {
+    display: flex;
+}
+
+.footer-links {
+    display: block;
+    margin-left: 70px;
+}
+
+.foter-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    fill: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-footer-link:hover,
+.icon-footer-link:focus {
+    background-color: var(--color-hover);
+    fill: var(--white-color);
+}

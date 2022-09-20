@@ -1,0 +1,46 @@
+.non-display {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.features-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.features-block li {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.features-title {
+    color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.about-features {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.icons-features {
+    display: flex;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 120px;
+}
