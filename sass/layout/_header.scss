@@ -12,8 +12,7 @@
 }
 
 .logo,
-.logo-web,
-.footer-logo {
+.logo-web {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -44,17 +43,20 @@
 .contacts {
     display: flex;
     column-gap: 50px;
-}
-
-.contacts a {
-    display: flex;
-    align-items: center;
-    color: var(--text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    a {
+        display: flex;
+        align-items: center;
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    & a:hover,
+    & a:focus {
+      color: var(--color-hover);
+     }
 }
 
 .icon-envelope {
@@ -71,31 +73,28 @@
     fill: currentColor;
 }
 
-.site-nav .current {
+.site-nav {
+  .current {
     color: var(--color-hover);
+   }
+   li {
+       position: relative;
+   }
+   a {
+       color: var(--title-text-color);
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 1.14;
+       letter-spacing: 0.02em;
+       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   & a:hover,
+   & a:focus {
+       color: var(--color-hover);
+   }
 }
 
 .buttons .current {
     background-color: var(--color-hover);
     color: #ffffff;
-}
-
-.site-nav li {
-    position: relative;
-}
-
-.site-nav a {
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav a:hover,
-.site-nav a:focus,
-.contacts a:hover,
-.contacts a:focus {
-    color: var(--color-hover);
 }

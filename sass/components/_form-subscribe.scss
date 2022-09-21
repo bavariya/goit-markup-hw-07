@@ -12,7 +12,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-weight: 700;
-
 }
 
 .subs-field {
@@ -49,12 +48,11 @@
     align-items: center;
     text-align: center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subs-button:focus,
-.subs-button:hover {
-    background-color: var(--button-hover-color);
-    cursor: pointer;
+   &:focus,
+   &:hover {
+        background-color: var(--button-hover-color);
+        cursor: pointer;
+    }
 }
 
 .subs-group {
