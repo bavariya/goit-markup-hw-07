@@ -29,17 +29,13 @@
 }
 
 .about-features {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font($lh:1.71);
 }
 
 .icons-features {
-    display: flex;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     margin-bottom: 30px;
     height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
 }

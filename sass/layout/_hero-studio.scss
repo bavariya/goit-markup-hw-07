@@ -15,9 +15,7 @@
 
 .hero-title {
     color: var(--hero-text-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    @include font(900,44px,1.36);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -30,9 +28,7 @@
 .button {
     color: var(--hero-text-color);
     background-color: var(--color-hover);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(700,16px,1.88);
     min-width: 216px;
     height: 50px;
     padding: 10px 32px;

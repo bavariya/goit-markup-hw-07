@@ -26,14 +26,10 @@
         bottom: 0px;
         left: 0px;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        display: flex;
+        @include flex-center;
         width: 370px;
         height: 70px;
-        justify-content: center;
-        align-items: center;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
+        @include font(700,14px,1.14);
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--white-color);

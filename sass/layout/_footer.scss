@@ -9,9 +9,7 @@
     display: inline-block;
     margin-bottom: 20px;
     font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font(700,26px,1.19);
 }
 
 footer a {
@@ -20,9 +18,7 @@ footer a {
 
 .footer-contacts {
    a {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font($lh:1.71);
     letter-spacing: 0.02em;
    }
    li:nth-child(-n + 2) {
@@ -60,16 +56,12 @@ footer a {
 }
 
 .foter-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     gap: 10px;
 }
 
 .icon-footer-link {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+    @include flex-center;
     width: 44px;
     height: 44px;
     padding: 12px;
