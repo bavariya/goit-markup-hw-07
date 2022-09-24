@@ -2,7 +2,7 @@
     border-bottom: 1px solid #ececec;
 }
 
-.logo-web {
+.logo__element {
     color: var(--color-hover);
 }
 
@@ -12,7 +12,7 @@
 }
 
 .logo,
-.logo-web {
+.logo__element {
     font-family: Raleway, sans-serif;
     @include font(700,26px,1.19);
 }
@@ -34,14 +34,33 @@
 }
 
 .site-nav {
-    display: flex;
-    column-gap: 50px;
+ display: flex;
+ column-gap: 50px;
+    .current {
+        color: var(--color-hover);
+    }
+
+    li {
+        position: relative;
+    }
+
+    .site-nav__item {
+        color: var(--title-text-color);
+        @include font(500);
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    & a:hover,
+    & a:focus {
+        color: var(--color-hover);
+    }
 }
 
 .contacts {
     display: flex;
     column-gap: 50px;
-    a {
+    .contacts__item {
         display: flex;
         align-items: center;
         color: var(--text-color);
@@ -69,25 +88,6 @@
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
-}
-
-.site-nav {
-  .current {
-    color: var(--color-hover);
-   }
-   li {
-       position: relative;
-   }
-   a {
-       color: var(--title-text-color);
-    @include font(500);
-       letter-spacing: 0.02em;
-       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
-   & a:hover,
-   & a:focus {
-       color: var(--color-hover);
-   }
 }
 
 .buttons .current {
